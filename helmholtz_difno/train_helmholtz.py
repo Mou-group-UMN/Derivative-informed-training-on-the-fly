@@ -89,7 +89,7 @@ def evaluate_jacobian(fno, test_a, test_jvps, delta_dirs, coords, device):
 
         bar{E} = mean_{i,d} ||J(a_i)v_d - J_theta(a_i)v_d|| / ||J(a_i)v_d||.
 
-    This matches the paper (Tab. 3 caption) and ``train.evaluate_jacobian_error``
+    This matches the paper's Jacobian-error metric (Tab. 4) and ``train.evaluate_jacobian_error``
     used for the other PDEs.  It is NOT the aggregate Frobenius-norm ratio
     (norm over the whole test batch per direction), which inflates the Helmholtz
     Jacobian error by ~2-3x relative to the reported numbers.

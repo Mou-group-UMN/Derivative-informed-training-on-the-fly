@@ -55,7 +55,7 @@ def load_bank(d, name, nt=None):
 
 @torch.no_grad()
 def eval_field(model, A, U, dev, bs=32, frame=None):
-    """Per-sample relative L2, then averaged (MC estimate, paper Eq. 34a):
+    """Per-sample relative L2, then averaged (paper's function-value error, Tab. 2):
     mean_i ||G_theta(a_i) - G(a_i)|| / ||G(a_i)||.
     frame=None -> over the whole trajectory; frame=k -> on time slice k only
     (frame=-1 gives an auxiliary final-state diagnostic)."""

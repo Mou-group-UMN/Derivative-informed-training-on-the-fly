@@ -1,9 +1,10 @@
 # Derivative-Informed Training of Neural Operators On-the-Fly via Sketched Tangent Consistency
 
-This repository contains the code for the paper
+This repository contains the code for the NeurIPS 2026 paper
 
 > **Derivative-Informed Training of Neural Operators On-the-Fly via Sketched Tangent Consistency**<br>
-> Xinhan Yang, Lu Lu, and Shancong Mou
+> Xinhan Yang, Lu Lu, and Shancong Mou<br>
+> *Advances in Neural Information Processing Systems (NeurIPS), 2026*
 
 Derivative-informed training supervises the input-output sensitivities of a neural operator,
 which matters when the operator is used as a differentiable surrogate in inverse problems,
@@ -36,8 +37,8 @@ that reproduce the paper's tables.
 ## Installation
 
 ```bash
-git clone https://github.com/yang9579/Derivative-informed-traning-on-the-fly.git
-cd Derivative-informed-traning-on-the-fly
+git clone https://github.com/Mou-group-UMN/Derivative-informed-training-on-the-fly.git
+cd Derivative-informed-training-on-the-fly
 pip install -r requirements.txt
 ```
 
@@ -104,9 +105,10 @@ benchmark directories and are ignored by Git.
 If you use this code, please cite the paper:
 
 ```bibtex
-@misc{yang2026derivative,
-  title  = {Derivative-Informed Training of Neural Operators On-the-Fly via Sketched Tangent Consistency},
-  author = {Yang, Xinhan and Lu, Lu and Mou, Shancong},
-  year   = {2026}
+@inproceedings{yang2026derivative,
+  title     = {Derivative-Informed Training of Neural Operators On-the-Fly via Sketched Tangent Consistency},
+  author    = {Yang, Xinhan and Lu, Lu and Mou, Shancong},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2026}
 }
 ```
